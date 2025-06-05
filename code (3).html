@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Untuk Ibu yang Keren dan Harmonis</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+  :root {
+    --color-primary: #ff6f91;
+    --color-secondary: #ff9671;
+    --color-light: #fff5f7;
+    --color-text: #4a4a4a;
+    --color-accent: #ffccd5;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-light);
+    color: var(--color-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    width: 100%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    padding: 3rem 1rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.8rem;
+    color: white;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(255,111,145,0.7);
+  }
+
+  header .decoration {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    fill: rgba(255,111,145,0.3);
+  }
+
+  header .decoration.top-left {
+    top: -30px;
+    left: -30px;
+    transform: rotate(15deg);
+  }
+
+  header .decoration.bottom-right {
+    bottom: -30px;
+    right: -30px;
+    transform: rotate(-10deg);
+  }
+
+  main {
+    max-width: 700px;
+    background: white;
+    margin: -3rem 1rem 3rem;
+    padding: 2rem 2.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 25px rgba(255,111,145,0.3);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s ease;
+  }
+
+  main:hover {
+    box-shadow: 0 15px 40px rgba(255,111,145,0.45);
+  }
+
+  main p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  main .heart {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    animation: beat 1.5s infinite;
+  }
+
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  footer {
+    width: 100%;
+    background: var(--color-accent);
+    text-align: center;
+    padding: 1.3rem 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-primary);
+    box-shadow: 0 -5px 15px rgba(255,111,145,0.25);
+  }
+
+  /* Additional decorations: floating hearts bottom corners */
+
+  .floating-heart {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    fill: var(--color-primary);
+    opacity: 0.3;
+    animation: floatUp 6s ease-in-out infinite;
+    z-index: 0;
+  }
+
+  .floating-heart:nth-child(1) {
+    left: 15vw;
+    bottom: 10vh;
+    animation-delay: 0s;
+  }
+
+  .floating-heart:nth-child(2) {
+    left: 30vw;
+    bottom: 5vh;
+    animation-delay: 2s;
+  }
+
+  .floating-heart:nth-child(3) {
+    right: 25vw;
+    bottom: 15vh;
+    animation-delay: 4s;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.7;
+      transform: translateY(-40px) scale(1.1);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      opacity: 0.3;
+    }
+  }
+
+  /* Responsive adjustments */
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    main {
+      padding: 1.5rem 1.5rem;
+      margin: -2rem 1rem 2rem;
+    }
+
+    main p {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>untuk emak yang lagi berulang tahun</h1>
+    <svg class="decoration top-left" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M32 56c-13 0-24-10-24-24S19 8 32 8s24 10 24 24-11 24-24 24z" />
+    </svg>
+    <svg class="decoration bottom-right" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <circle cx="32" cy="32" r="24" />
+    </svg>
+  </header>
+  <main>
+    <p>
+      selamat ulang tahun mak, semoga diberikan kesehatan dan kekuatan.<br />
+      semoga makin sering latihannya dan selalu semangat mak! membara <span class="heart" aria-hidden="true">❤️</span>
+    </p>
+  </main>
+  <footer>
+    Dengan cinta dan rasa hormat, selalu untuk Ibu tercinta.
+  </footer>
+
+  <!-- Floating hearts decorations -->
+  <svg class="floating-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+      2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09
+      C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+  <svg class="floating-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+      2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09
+      C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+  <svg class="floating-heart" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5
+      2 5.42 4.42 3 7.5 3c1.74 0 3.41 1.01 4.5 2.09
+      C13.09 4.01 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5
+      c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+  </svg>
+
+</body>
+</html>
+
